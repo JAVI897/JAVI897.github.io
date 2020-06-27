@@ -147,7 +147,7 @@ En el siguiente gráfico se muestra el SPE para cada observación con el límte 
 
 El estadístico T<sup>2</sup> es un *resumen* de todos los scores t en todas las A dimensiones (3 en nuestro caso). El T<sup>2</sup> es la distancia desde el centro del hiperplano a la proyección de la observación. Una proyección que esté justo en el centro del hiperplano, tendrá un valor T<sup>2</sup> = 0. Las observaciones que tengan valores muy cercanos al centroide de los datos, tendrán valores T<sup>2</sup> muy bajos. *Dato curioso;* el estadístico T<sup>2</sup> es equivalente a la distancia Mahalanobis de una proyección a la media.
 
-<center><img src="ec11.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec11.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
 
 <br>
 
@@ -155,7 +155,7 @@ Donde A es el número total de componentes y s<sub>a</sub> es la varianza para c
 
 El estadístico T<sup>2</sup> se distribuye como una distribución F de Snedecor. Por ello, podemos calcular un límite de confianza del 95% por debajo del cual esperamos encontrar el 95% de las observaciones. Por tanto, una observación T<sub>i</sub> estará por encima de este límite cuando:
 
-<center><img src="ec12.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec12.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
 
 <br>
 
@@ -163,7 +163,7 @@ Como se observa en el siguiente gráfico, existen observaciones que sobrepasan e
 
 
 
-<center><img src="output_19_0.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_19_0.png?raw=true" alt="png" style="zoom:50%;" /></center>
 
 
 
@@ -174,7 +174,7 @@ Para interpretar los gráficos de loadings o de scores, primero se debe observar
 
 <br>
 
-<center><img src="ec13.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec13.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
 
 <br>
 
@@ -193,7 +193,7 @@ El siguiente gráfico muestra que:
 - **tempo:** Explicada por la primera y segunda componente
 - **valence:** Principalmente explicada por la segunda componente
 
-<center><img src="output_26_0.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_26_0.png?raw=true" alt="png" style="zoom:80%;" /></center>
 
 
 ### Loadings
@@ -213,7 +213,7 @@ Podemos observar diferentes relaciones en el siguiente gráfico:
 - Speechiness  y liveness se correlacionan de forma negativa con instrumentalness (como cabría esperar)
 - Acousticness se correlaciona de forma negativa con danceability, duration_ms o explicit
 
-<center><img src="output_30_0.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_30_0.png?raw=true" alt="png" style="zoom:80%;" /></center>
 
 
 #### w<sub>1</sub>\*c<sub>1</sub>/w<sub>3</sub>\*c<sub>3</sub>
@@ -222,7 +222,7 @@ Esta nueva tercera componente está correlacionada de forma positiva con danceab
 
 
 
-<center><img src="output_32_0.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_32_0.png?raw=true" alt="png" style="zoom:80%;" /></center>
 
 
 ### Scores
@@ -233,14 +233,14 @@ Como ya se ha dicho, los scores son las proyecciones de las observaciones en el 
 
 
 
-<center><img src="output_34_0.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_34_0.png?raw=true" alt="png" style="zoom:80%;" /></center>
 
 No hemos introducido la variable *año* en el modelo, así que... ¿qué ocurre si coloreamos los scores según año? Si lo hacemos se observa un gradiente de color moviéndose hacia la dirección de popularity, como el gradiente visto antes. Esto significa que las canciones más populares son a su vez las más recientes. Además, este gradiente nos revela también que las canciones han ido aumentando en  danceability, energy, loudness o duration_ms a lo largo de los años y disminuyendo en acousticness.
 
 
 
 
-![png](output_36_0.png)
+![png](https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_36_0.png?raw=true)
 
 
 #### Interpretando algunos scores
@@ -251,13 +251,13 @@ Por ejemplo, *La Boa (La Sonora Santanera)*, esta observación tiene un valor mu
 
 
 
-<center><img src="output_39_0.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_39_0.png?raw=true" alt="png" style="zoom:80%;" /></center>
 
 
 
 
 
-<center><img src="output_40_0.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_40_0.png?raw=true" alt="png" style="zoom:80%;" /></center>
 
 
 ### Coeficientes de regresión PLS
@@ -267,7 +267,7 @@ Un modelo PLS puede ser escrito como un modelo de regresión de la forma; Y = y<
 En el siguiente gráfico tenemos los coeficientes para la variable respuesta; Popularity. Observamos que las principales variables que disminuyen la popularidad de una canción son valence y acousticness, seguidas en menor medida por instrumentalness, liveness y speechiness. Por otra parte, las principales variables que incrementan la popularidad de una canción son danceability, energy, explicit y loudness. Tempo, mode y duration no parecen ser significantes.
 
 
-![png](output_42_0.png)
+![png](https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_42_0.png?raw=true)
 
 
 ### Bob Marley vs Mozart
@@ -277,12 +277,12 @@ Si proyectamos todas las canciones de Mozart o Bob Marley sobre las componentes 
 
 
 
-![png](output_44_0.png)
+![png](https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_44_0.png?raw=true)
 
 Si los coloreamos según año, no se observa ningún gradiente de color en el caso de Bob Marley, pero sí en el caso de Mozart. Esto significa que sus canciones han aumentado en instrumentalness a lo largo de los años.
 
 
 
 
-![png](output_46_0.png)
+![png](https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_46_0.png?raw=true)
 
