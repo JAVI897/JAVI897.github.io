@@ -1,0 +1,16 @@
+- title: home
+  url: /
+  external: false
+
+- title: proyectos
+  url: /proyectos
+  external: false
+
+- title: about
+  url: /about/
+  external: false
+
+
+- title: github
+  url: https://github.com/JAVI897
+  external: true
