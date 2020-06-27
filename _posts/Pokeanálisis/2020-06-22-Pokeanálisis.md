@@ -21,7 +21,7 @@ no todas las especies evolucionan de la misma forma...
 
 <br>
 
-<center><img src="e1.jpg" style="zoom:90%;" /></center>
+<center><img src="e1.jpg" alt="e1" style="zoom:90%;" /></center>
 
 
 
