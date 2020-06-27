@@ -61,7 +61,7 @@ Empezamos con dos matrices; X e Y. Ambas deben ser centradas y escaladas antes d
 
 
 
-<center><img src="ec1.PNG" alt="ec1.PNG" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec1.PNG?raw=true" style="zoom:50%;" /></center>
 
 
 
@@ -69,31 +69,31 @@ Empezamos con dos matrices; X e Y. Ambas deben ser centradas y escaladas antes d
 
 
 
-<center><img src="ec2.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec2.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
 
 
 
 **`Paso 4`** Predecimos las columnas de **Y** usando **t**
 
-<center><img src="ec3.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec3.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
 
 **`Paso 5`** Predecimos las filas de **Y** usando **c**
 
-<center><img src="ec4.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec4.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
 
 Repetimos 1,2,3,4,5 hasta la convergencia. Por ejemplo, hasta que u es muy parecido al u de la iteración anterior
 
 6. En la convergencia, predecimos las columnas de **X** usando **t**
 
-<center><img src="ec5.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec5.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
 
 7. Matrices de residuos
 
-<center><img src="ec6.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec6.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
 
 E es la matriz de residuos de X y F la matriz de residuos de Y. Las nuevas iteraciones empiezan con X e Y como las matrices de residuos de la anterior iteración. Por ello, se extrae una dimensión por iteración.
 
-<center><img src="ec7.png" alt="png" style="zoom:70%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec7.PNG?raw=true" alt="png" style="zoom:70%;" /></center>
 
 
 
@@ -115,7 +115,7 @@ Si una variable x1 tiene un alto valor en su peso w, quiere decir que esa variab
 
 Una forma de seleccionar componentes PLS es analizando el Q<sup>2</sup> y R<sup>2</sup> para cada componente. Se decide parar de escoger componentes cuando el Q<sup>2</sup> empieza a decrecer. En nuestro caso, usaremos únicamente las tres primeras componentes. Si quisiéramos un modelo para predecir  la popularidad deberíamos escoger más componentes PLS ya que el Q<sup>2</sup> mide la capacidad predictiva del modelo y en el siguiente gráfico se observa que el valor Q<sup>2</sup> aumenta tras cada componente.
 
-<center><img src="output_13_0.png" alt="png" style="zoom:60%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_13_0.png?raw=true" alt="png" style="zoom:60%;" /></center>
 
 
 ### SPE
@@ -124,23 +124,23 @@ Tras realizar un modelo PCA o PLS se deben analizar los residuos del modelo. La 
 
 
 
-<center><img src="ec8.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec8.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
 
 <br>
 
 Donde e es el vector de residuos de una observación. Una observación en X con un SPE = 0 es una observación que se encuentra justo en el hiperplano definido por el modelo, mientras que una observación con un alto SPE, se alejará mucho del hiperplano. En PLS nos encontraremos con dos tipos diferentes de SPE; una clase de SPE para el espacio Y que se calculará usando la matriz de residuos F y otra clase de SPE para el espacio X. En este caso vamos a centrarnos únicamente en el SPE para el espacio X. 
 
-<center><img src="ec9.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec9.PNG?raw=true" alt="png" alt="png" style="zoom:80%;" /></center>
 
 Podemos calcular un límite de confianza, por debajo de este esperaremos encontrar una fracción de los datos. Este es el límite chi2;
 
-<center><img src="ec10.png" alt="png" style="zoom:80%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec10.PNG?raw=true" alt="png" alt="png" style="zoom:80%;" /></center>
 
 <br>
 
 En el siguiente gráfico se muestra el SPE para cada observación con el límte del 99% de confianza. Aquellas observaciones que superen dicho límte deberán ser eliminadas y se recalculará el modelo.
 
-<center><img src="output_17_0.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/output_17_0.png?raw=true" alt="png" alt="png" style="zoom:50%;" /></center>
 
 
 ### T<sup>2</sup>-Hotelling
