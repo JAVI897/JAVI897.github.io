@@ -61,7 +61,7 @@ Empezamos con dos matrices; X e Y. Ambas deben ser centradas y escaladas antes d
 
 
 
-<center><img src="/_posts/understanding popularity with PLS/ec1.png" alt="png" style="zoom:50%;" /></center>
+<center><img src="_posts/understanding popularity with PLS/ec1.png" alt="png" style="zoom:50%;" /></center>
 
 
 
