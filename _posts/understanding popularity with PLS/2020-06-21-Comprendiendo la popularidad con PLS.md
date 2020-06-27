@@ -61,7 +61,7 @@ Empezamos con dos matrices; X e Y. Ambas deben ser centradas y escaladas antes d
 
 
 
-<center><img src="ec1.png" alt="ec1.png" style="zoom:50%;" /></center>
+<center><img src="ec1.PNG" alt="ec1.PNG" style="zoom:50%;" /></center>
 
 
 
