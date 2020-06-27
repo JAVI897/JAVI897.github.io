@@ -41,7 +41,7 @@ En la siguiente imagen vemos la varianza explicada por las componentes principal
 componentes nos quedaremos vamos a inspeccionar un poco estas mediante las contribuciones ya que nos
 interesa que las componentes sean interpretables.
 
-<center><img src="e2.png" alt="png" style="zoom:90%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e2.PNG?raw=true" alt="png" style="zoom:90%;" /></center>
 
 #### Buscando la interpretabilidad
 
@@ -56,7 +56,7 @@ interesa que las componentes sean interpretables.
   que las variables que más contribuyen son las de defensa y la de special defense. Por ello, a un mayor valor
   en la dimensión 3 mejor se defenderá nuestro Pokémon.
 
-<center><img src="e3.PNG" alt="png" style="zoom:70%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e3.PNG?raw=true" alt="png" style="zoom:70%;" /></center>
 
 Las siguientes dimensiones son (en cuanto a interpretabilidad) versiones muy similares de las anteriores.
 Además, sus autovalores son mucho menores que 1, el de la dimensión 4 es de 0,73, por ello,  no las usaremos en el **Pokeanálisis**.
@@ -71,7 +71,7 @@ probabilidad de capturar un Pokémon disminuye a medida que aumenta su puntuaci�
 
 
 
-<center><img src="e4.PNG" alt="png" style="zoom:70%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e4.png?raw=true" alt="png" style="zoom:70%;" /></center>
 
 #### Biplot - IsLegendary
 
@@ -88,7 +88,7 @@ De acuerdo con esta descripción los Pokémon que son legendarios deberían tene
 dimensión 1 ya que esta es la que captura lo bueno que es el espécimen. Si observamos el *biplot* siguiente
 podemos ver que así es.
 
-<center><img src="e5.PNG" alt="png" style="zoom:70%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e5.png?raw=true" alt="png" style="zoom:70%;" /></center>
 
 #### Evoluciones!!💥
 
@@ -113,7 +113,7 @@ Vamos a obtener los scores de estas dos líneas y los mostraremos en un gráfico
 dimensión 1, que actuará como medida global de cuán bueno es el Pokémon y el eje y será la dimensión 2
 que nos resumirá el ataque del personaje.
 
-<center><img src="e6.png" alt="png" style="zoom:70%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e6.png?raw=true" alt="png" style="zoom:70%;" /></center>
 
 En el gráfico anterior vemos de forma muy clara el fenómeno de la evolución. A medida que mejora nuestra
 especie, esta va ganando puntos en diferentes características y ataque; esto se refleja en la dimensión 1 y 2
@@ -131,7 +131,7 @@ la evolución de Pikachu.
 - Caterpie 👉 Metapod 👉 Butterfree ✋ **Insecto**
 - Pikachu 👉 Raichu
 
-<center><img src="e7.png" alt="png" style="zoom:70%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e7.png?raw=true" alt="png" style="zoom:70%;" /></center>
 
 Vemos como en la evolución de estos insectos, en la fase intermedia disminuye su ataque (dimensión2) y
 no aumentan demasiado las demás características (dimensión 1), en la última fase se da un gran salto y se
