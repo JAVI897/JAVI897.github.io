@@ -21,7 +21,7 @@ no todas las especies evolucionan de la misma forma...
 
 <br>
 
-<center><img src="e1.jpg" style="zoom:90%;" /></center>
+<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Pokean%C3%A1lisis/e1.jpg?raw=true" style="zoom:90%;" /></center>
 
 
 
