@@ -21,7 +21,7 @@ author:
 url: "https://klise.now.sh"
 baseurl:
 permalink: /:title/
-google_analytics:
+google_analytics: UA-171036340-1
 fb_appid:
 
 # Collection setting
