@@ -79,13 +79,13 @@ $$ Y^t = \vec{c} \; \vec{u}^t + E_4 \rightarrow \vec{u} = \frac{Y \; \vec{c}}{\v
 
 Repetimos 1,2,3,4,5 hasta la convergencia. Por ejemplo, hasta que u es muy parecido al u de la iteración anterior
 
-6. En la convergencia, predecimos las columnas de **X** usando **t** 
+**`Paso 6`** En la convergencia, predecimos las columnas de **X** usando **t** 
 
-   $$ X = \vec{t} \; \vec{p}^t + E_5 \rightarrow \vec{p}^t = \frac{\vec{t}^t \; X}{\vec{t}^t \vec{t}}$$
+$$ X = \vec{t} \; \vec{p}^t + E_5 \rightarrow \vec{p}^t = \frac{\vec{t}^t \; X}{\vec{t}^t \vec{t}}$$
 
-7. Matrices de residuos
+**`Paso 7`** Matrices de residuos
 
-   $$E = X - \vec{t} \; \vec{p}^t \;\;\; F = Y - \vec{t} \; \vec{c}^t $$
+$$E = X - \vec{t} \; \vec{p}^t \;\;\; F = Y - \vec{t} \; \vec{c}^t $$
 
 
 
