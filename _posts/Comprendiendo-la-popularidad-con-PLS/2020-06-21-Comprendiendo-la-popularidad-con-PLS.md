@@ -49,7 +49,7 @@ La principal diferencia comparado con PCA es que en PCA se proyectan las observa
 
 ### Algoritmo PLS
 
-Empezamos con dos matrices; X e Y. Ambas deben ser centradas y escaladas antes de que empiece el algoritmo.
+Empezamos con dos matrices; $X$ e $Y$. Ambas deben ser centradas y escaladas antes de que empiece el algoritmo.
 
 **`Paso 1`** Establecemos **u** como la primera columna de **Y** o la columna de máxima varianza
 
