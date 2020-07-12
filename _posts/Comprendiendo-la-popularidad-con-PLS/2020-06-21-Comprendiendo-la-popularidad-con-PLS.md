@@ -59,7 +59,7 @@ Empezamos con dos matrices; $X$ e $Y$. Ambas deben ser centradas y escaladas ant
 
 
 
-
+$$X = \vec{u} \; \vec{w}^t + E_{1} \rightarrow \vec{w}^t = \frac{\vec{u}^t \; X}{\vec{u}^t \vec{u}}$$
 
 <center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec1.PNG?raw=true" style="zoom:50%;" /></center>
 
