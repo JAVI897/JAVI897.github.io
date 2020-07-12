@@ -61,37 +61,35 @@ Empezamos con dos matrices; $X$ e $Y$. Ambas deben ser centradas y escaladas ant
 
 $$X = \vec{u} \; \vec{w}^t + E_{1} \rightarrow \vec{w}^t = \frac{\vec{u}^t \; X}{\vec{u}^t \vec{u}}$$
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec1.PNG?raw=true" style="zoom:50%;" /></center>
-
 
 
 **`Paso 3`** Predecimos las filas de **X** usando **w**
 
-
-
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec2.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
+$$X^t = \vec{w} \; \vec{t}^t + E_{2} \rightarrow \vec{t} = X \; \vec{w} $$
 
 
 
 **`Paso 4`** Predecimos las columnas de **Y** usando **t**
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec3.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
+$$ Y = \vec{t} \; \vec{c}^t + E_3 \rightarrow \vec{c}^t = \frac{\vec{t}^t \; Y}{\vec{t}^t \vec{t}}$$
 
 **`Paso 5`** Predecimos las filas de **Y** usando **c**
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec4.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
+$$ Y^t = \vec{c} \; \vec{u}^t + E_4 \rightarrow \vec{u} = \frac{Y \; \vec{c}}{\vec{c}^t\vec{c}}$$
 
 Repetimos 1,2,3,4,5 hasta la convergencia. Por ejemplo, hasta que u es muy parecido al u de la iteración anterior
 
-6. En la convergencia, predecimos las columnas de **X** usando **t**
+6. En la convergencia, predecimos las columnas de **X** usando **t** 
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec5.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
+   $$ X = \vec{t} \; \vec{p}^t + E_5 \rightarrow \vec{p}^t = \frac{\vec{t}^t \; X}{\vec{t}^t \vec{t}}$$
 
 7. Matrices de residuos
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec6.PNG?raw=true" alt="png" style="zoom:50%;" /></center>
+   $$E = X - \vec{t} \; \vec{p}^t \;\;\; F = Y - \vec{t} \; \vec{c}^t $$
 
-E es la matriz de residuos de X y F la matriz de residuos de Y. Las nuevas iteraciones empiezan con X e Y como las matrices de residuos de la anterior iteración. Por ello, se extrae una dimensión por iteración.
+
+
+E es la matriz de residuos de $X$ y $F$ la matriz de residuos de $Y$. Las nuevas iteraciones empiezan con $X$ e $Y$ como las matrices de residuos de la anterior iteración. Por ello, se extrae una dimensión por iteración.
 
 <center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec7.PNG?raw=true" alt="png" style="zoom:70%;" /></center>
 
