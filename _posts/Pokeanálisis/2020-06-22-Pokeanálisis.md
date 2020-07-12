@@ -140,4 +140,4 @@ momento. . . ) esto no ocurre así.
 
 
 
-$\frac{1}{2}$
+$\phi (x)$
