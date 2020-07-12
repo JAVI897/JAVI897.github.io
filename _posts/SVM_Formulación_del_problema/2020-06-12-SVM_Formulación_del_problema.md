@@ -18,7 +18,7 @@ Un dataset $D = \{(x_i, y_i) | x_i \in \mathbb{R}^p, y_i \in \{-1, 1\} \}^m_{i=1
 
 
 <p float="middle">
-	<img src="C:\Users\Usuario\Desktop\JAVI897.github.io\_posts\SVM_Formulación_del_problema\Diferentes-hiperplanos.png" 				style="zoom:26%;" />
-    <img src="C:\Users\Usuario\Desktop\JAVI897.github.io\_posts\SVM_Formulación_del_problema\hiperplano-optimo.png" 				style="zoom:26%;" />
+	<img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/SVM_Formulaci%C3%B3n_del_problema/Diferentes-hiperplanos.png?raw=true" style="zoom:26%;" />
+    <img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/SVM_Formulaci%C3%B3n_del_problema/hiperplano-optimo.png?raw=true" style="zoom:26%;" />
 </p>
 
