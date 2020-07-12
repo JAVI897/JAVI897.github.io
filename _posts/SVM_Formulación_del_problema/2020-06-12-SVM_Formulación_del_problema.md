@@ -5,7 +5,7 @@ date: 2020-07-12 11:58:49 +07:00
 
 
 
-Durante este post usaremos el siguiente conjunto de datos $$ \pi = \{(x_i, y_i) | x_i \in \mathbb{R}^p, y_i \in \{Austrias, Borbones\} \}^m_{i=1}$$ . Como representantes de la dinastía borbónica he escogido a mí trío favorito: Carlos IV, su esposa María Luisa de Parma y Manuel Godoy. Sí, Godoy no es ningún borbón, pero existen  razonables dudas sobre la parte que le ocupó a Carlos en los 14 hijos de María Luisa de Parma y si a esto le añadimos el razonable parecido de estos con Godoy junto a la promiscuidad y desatención de la pobre María Luisa por parte de su marido...
+Durante este post usaremos el siguiente conjunto de datos $ \pi = \{(x_i, y_i) | x_i \in R^p, y_i \in \{Austrias, Borbones\} \}^m_{i=1}$ . Como representantes de la dinastía borbónica he escogido a mí trío favorito: Carlos IV, su esposa María Luisa de Parma y Manuel Godoy. Sí, Godoy no es ningún borbón, pero existen  razonables dudas sobre la parte que le ocupó a Carlos en los 14 hijos de María Luisa de Parma y si a esto le añadimos el razonable parecido de estos con Godoy junto a la promiscuidad y desatención de la pobre María Luisa por parte de su marido...
 
 Como representantes de la dinastía de los austrias he escogido a Juana I *la Loca*, Carlos II *el Hechizado* y el príncipe don Carlos (primogénito de Felipe II). Creo que estos tres personajes representan a la perfección la demencia y los frutos de la consanguinidad que caracterizaron a la dinastía de los austrias. 
 
@@ -13,7 +13,7 @@ Respecto al poco conocido Carlos, creo que merece algunas palabras. El pobre nun
 
 <img src="C:\Users\Usuario\Desktop\JAVI897.github.io\_posts\SVM_Formulación_del_problema\familia-real.png" style="zoom:20%;" />
 
-Un dataset $$D = \{(x_i, y_i) | x_i \in \mathbb{R}^p, y_i \in \{-1, 1\} \}^m_{i=1}$$ linealmente separable puede clasificarse usando varios hiperplanos diferentes. Un modelo de clasifiación como el perceptrón encontrará miles de hiperplanos en cada ejecución. Las SVM en vez de encontrar un hiperplano cualquiera, encuentran *el* señor hiperplano, el que mejor separa entre los datos.
+Un dataset $D = \{(x_i, y_i) | x_i \in R^p, y_i \in \{-1, 1\} \}^m_{i=1}$ linealmente separable puede clasificarse usando varios hiperplanos diferentes. Un modelo de clasifiación como el perceptrón encontrará miles de hiperplanos en cada ejecución. Las SVM en vez de encontrar un hiperplano cualquiera, encuentran *el* señor hiperplano, el que mejor separa entre los datos.
 
 
 
