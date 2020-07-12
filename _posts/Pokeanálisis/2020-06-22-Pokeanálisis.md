@@ -138,3 +138,6 @@ no aumentan demasiado las demás características (dimensión 1), en la última 
 aumenta el ataque y los demás estadísticos. En cambio, en la evolución de Pikachu (que solo tiene dos, de
 momento. . . ) esto no ocurre así.
 
+
+
+$\frac{1}{2}$
