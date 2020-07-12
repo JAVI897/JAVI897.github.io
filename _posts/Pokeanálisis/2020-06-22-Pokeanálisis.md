@@ -137,3 +137,7 @@ Vemos como en la evolución de estos insectos, en la fase intermedia disminuye s
 no aumentan demasiado las demás características (dimensión 1), en la última fase se da un gran salto y se
 aumenta el ataque y los demás estadísticos. En cambio, en la evolución de Pikachu (que solo tiene dos, de
 momento. . . ) esto no ocurre así.
+
+$\pi$
+
+$$\pi$$
