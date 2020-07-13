@@ -122,8 +122,6 @@ Tras realizar un modelo PCA o PLS se deben analizar los residuos del modelo. La 
 
 $$ SPE_i = \sqrt{e_i^t \; e_i}$$
 
-<br>
-
 Donde e es el vector de residuos de una observación. Una observación en X con un SPE = 0 es una observación que se encuentra justo en el hiperplano definido por el modelo, mientras que una observación con un alto SPE, se alejará mucho del hiperplano. En PLS nos encontraremos con dos tipos diferentes de SPE; una clase de SPE para el espacio Y que se calculará usando la matriz de residuos F y otra clase de SPE para el espacio X. En este caso vamos a centrarnos únicamente en el SPE para el espacio X. 
 
 <center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec9.PNG?raw=true" alt="png" alt="png" style="zoom:80%;" /></center>
@@ -131,8 +129,6 @@ Donde e es el vector de residuos de una observación. Una observación en X con 
 Podemos calcular un límite de confianza, por debajo de este esperaremos encontrar una fracción de los datos. Este es el límite chi2;
 
 $$ chi2lim = g \; \chi2_h(\alpha)$$
-
-<br>
 
 En el siguiente gráfico se muestra el SPE para cada observación con el límte del 99% de confianza. Aquellas observaciones que superen dicho límte deberán ser eliminadas y se recalculará el modelo.
 
@@ -145,15 +141,11 @@ El estadístico T<sup>2</sup> es un *resumen* de todos los scores t en todas las
 
 $$T_i^2 = \sum_{a = 1}^{a = A} (\frac{t_{i,a}}{s_a})^2$$
 
-<br>
-
 Donde A es el número total de componentes y s<sub>a</sub> es la varianza para cada componente. En PCA sería el valor propio asociado a la componente.
 
 El estadístico T<sup>2</sup> se distribuye como una distribución F de Snedecor. Por ello, podemos calcular un límite de confianza del 95% por debajo del cual esperamos encontrar el 95% de las observaciones. Por tanto, una observación T<sub>i</sub> estará por encima de este límite cuando:
 
 $$T_i^2 > F_{A, N-A}^{\alpha = 0.05} \; \frac{A \; (N^2 - 1)}{N (N - A)}$$
-
-<br>
 
 Como se observa en el siguiente gráfico, existen observaciones que sobrepasan el límite del 99%. Al igual que antes con el SPE, estas observaciones anómalas se eliminarán y el modelo se recalculará.
 
@@ -168,11 +160,7 @@ Como se observa en el siguiente gráfico, existen observaciones que sobrepasan e
 
 Para interpretar los gráficos de loadings o de scores, primero se debe observar el valor R<sup>2</sup> para cada variable distinguiendo entre componentes. El R<sup>2</sup> nos indica la variabilidad de una variable k explicada por el modelo. El R<sup>2</sup> puede calcularse como:
 
-<br>
-
 $$R_i^2 = \frac{SCE_k}{SCT_k}$$
-
-<br>
 
 El siguiente gráfico muestra que:
 
