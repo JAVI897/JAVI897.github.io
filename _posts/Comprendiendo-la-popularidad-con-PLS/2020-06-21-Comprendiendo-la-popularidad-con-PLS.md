@@ -120,9 +120,7 @@ Una forma de seleccionar componentes PLS es analizando el Q<sup>2</sup> y R<sup>
 
 Tras realizar un modelo PCA o PLS se deben analizar los residuos del modelo. La parte residual de una observación puede reducirse a un único número; el SPE (sum of predicted errors):
 
-
-
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec8.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
+$$ SPE_i = \sqrt{e_i^t \; e_i}$$
 
 <br>
 
@@ -132,7 +130,7 @@ Donde e es el vector de residuos de una observación. Una observación en X con 
 
 Podemos calcular un límite de confianza, por debajo de este esperaremos encontrar una fracción de los datos. Este es el límite chi2;
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec10.PNG?raw=true" alt="png" alt="png" style="zoom:80%;" /></center>
+$$ chi2lim = g \; \chi2_h(\alpha)$$
 
 <br>
 
@@ -145,7 +143,7 @@ En el siguiente gráfico se muestra el SPE para cada observación con el límte 
 
 El estadístico T<sup>2</sup> es un *resumen* de todos los scores t en todas las A dimensiones (3 en nuestro caso). El T<sup>2</sup> es la distancia desde el centro del hiperplano a la proyección de la observación. Una proyección que esté justo en el centro del hiperplano, tendrá un valor T<sup>2</sup> = 0. Las observaciones que tengan valores muy cercanos al centroide de los datos, tendrán valores T<sup>2</sup> muy bajos. *Dato curioso;* el estadístico T<sup>2</sup> es equivalente a la distancia Mahalanobis de una proyección a la media.
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec11.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
+$$T_i^2 = \sum_{a = 1}^{a = A} (\frac{t_{i,a}}{s_a})^2$$
 
 <br>
 
@@ -153,7 +151,7 @@ Donde A es el número total de componentes y s<sub>a</sub> es la varianza para c
 
 El estadístico T<sup>2</sup> se distribuye como una distribución F de Snedecor. Por ello, podemos calcular un límite de confianza del 95% por debajo del cual esperamos encontrar el 95% de las observaciones. Por tanto, una observación T<sub>i</sub> estará por encima de este límite cuando:
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec12.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
+$$T_i^2 > F_{A, N-A}^{\alpha = 0.05} \; \frac{A \; (N^2 - 1)}{N (N - A)}$$
 
 <br>
 
@@ -172,7 +170,7 @@ Para interpretar los gráficos de loadings o de scores, primero se debe observar
 
 <br>
 
-<center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/Comprendiendo-la-popularidad-con-PLS/ec13.PNG?raw=true" alt="png" style="zoom:80%;" /></center>
+$$R_i^2 = \frac{SCE_k}{SCT_k}$$
 
 <br>
 
@@ -260,7 +258,7 @@ Por ejemplo, *La Boa (La Sonora Santanera)*, esta observación tiene un valor mu
 
 ### Coeficientes de regresión PLS
 
-Un modelo PLS puede ser escrito como un modelo de regresión de la forma; Y = y<sup>t</sup> + X B<sub>PLS</sub> + F. No entraré en demasiados detalles sobre cómo se obtiene la matriz B<sub>PLS</sub>, pero esta matriz tiene k filas (k es el número de variables de X) y m columnas (m es el número de variables de Y). Así, para cada variable en Y existen unos coeficientes que nos indican la influencia de cada variable en X. Estos coeficientes facilitan la interpretación del modelo, la desventaja es que se pierde información sobre la estructura de correlación.
+Un modelo PLS puede ser escrito como un modelo de regresión de la forma; $Y = \vec{y}^t + X \; B_{PLS} + F$. No entraré en demasiados detalles sobre cómo se obtiene la matriz B<sub>PLS</sub>, pero esta matriz tiene k filas (k es el número de variables de X) y m columnas (m es el número de variables de Y). Así, para cada variable en Y existen unos coeficientes que nos indican la influencia de cada variable en X. Estos coeficientes facilitan la interpretación del modelo, la desventaja es que se pierde información sobre la estructura de correlación.
 
 En el siguiente gráfico tenemos los coeficientes para la variable respuesta; Popularity. Observamos que las principales variables que disminuyen la popularidad de una canción son valence y acousticness, seguidas en menor medida por instrumentalness, liveness y speechiness. Por otra parte, las principales variables que incrementan la popularidad de una canción son danceability, energy, explicit y loudness. Tempo, mode y duration no parecen ser significantes.
 
