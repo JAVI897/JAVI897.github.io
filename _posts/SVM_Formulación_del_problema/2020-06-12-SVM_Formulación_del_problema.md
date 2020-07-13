@@ -127,7 +127,7 @@ $$\underset{w, b}{\text{max}} \; \frac{F}{\lVert w \rVert}$$
 
 $$s.t \;\; f_i \geq F, i= 1, ..., m$$
 
-Intentamos maximizar el margen geométrico, por tanto, la escala de $w$ y $b$ no importan. Es decir, podemos variar $w$ y $b$ tanto como queramos que $\gamma_i$ no se verá afectado por ello. Por ello, escalamos $w$ y $b$ de forma que $F=1$.
+Intentamos maximizar el margen geométrico, por tanto, la escala de $w$ y $b$ no importan. Es decir, podemos variar $w$ y $b$ tanto como queramos que $\gamma_i$ no se verá afectado por ello. Por tanto, escalamos $w$ y $b$ de forma que $F=1$.
 
 $$\underset{w, b}{\text{max}} \; \frac{1}{\lVert w \rVert}$$
 
