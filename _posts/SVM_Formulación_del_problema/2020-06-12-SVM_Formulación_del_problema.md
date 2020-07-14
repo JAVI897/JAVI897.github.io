@@ -41,7 +41,17 @@ Para encontrar *el señor* hiperplano primero debemos saber cómo comparar dos h
 
 <center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/SVM_Formulaci%C3%B3n_del_problema/ejemplo-lejania.png?raw=true" style="zoom:33%;" /></center>
 
-Como acabamos de ver, si nuestro personaje se sitúa por encima del hiperplano el valor es negativo y positivo en caso contrario. Además, según se alejan nuestros monarcas del hiperplano, la ecuación de este asigna un valor cada vez mayor. Entonces, podemos calcular el valor $\beta = wx + b$ para saber lo lejos que se encuentra una observación del hiperplano. El mejor hiperplano será aquel que tenga las observaciones tan alejadas como sea posible. Definimos $B$ como el menor valor de todos los $\beta$ de nuestro dataset. <mark>Si queremos escoger entre dos hiperplanos, escogeremos el que tenga un mayor $B$.</mark>
+Como acabamos de ver, si nuestro personaje se sitúa por encima del hiperplano el valor es negativo y positivo en caso contrario. Por ello, para el problema de clasificación inicial podemos usar la siguiente regla para clasificar en una clase u otra:
+$$
+\begin{equation}
+  \hat{y}_i =
+    \begin{cases}
+      Austria & \text{si} \;\;\; wx_i + b > 0\\
+      Borbón  & \text{en caso contrario}\\
+    \end{cases}       
+\end{equation}
+$$
+Además, según se alejan nuestros monarcas del hiperplano, la ecuación de este asigna un valor cada vez mayor. Entonces, podemos calcular el valor $\beta = wx + b$ para saber lo lejos que se encuentra una observación del hiperplano. El mejor hiperplano será aquel que tenga las observaciones tan alejadas como sea posible. Definimos $B$ como el menor valor de todos los $\beta$ de nuestro dataset. <mark>Si queremos escoger entre dos hiperplanos, escogeremos el que tenga un mayor $B$.</mark>
 
 $$B = \underset{i=1,...,m}{\text{min}} \beta_i$$
 
@@ -57,7 +67,7 @@ $$B = \underset{i=1,...,m}{\text{min}} | \beta_i |$$
 
 Vamos a trabajar con una variable respuesta que tomará el valor +1 si la observación pertenece a los Borbones y -1 si pertenece a los Austrias (no eran muy positivos). 
 
-Calcular $B$ nos ayuda a escoger el hiperplano, pero usando solo $B$ podríamos escoger el hiperplano erróneo. En la siguiente gráfica vemos que en el hiperplano de color negro las clases se separan bien (la clase negativa de los Austrias está por encima de la recta y la clase positiva por debajo), pero en el segundo hiperplano (rojo) las clases están mal clasificadas. Sin embargo, ambos hiperplanos tienen un $B = 2$. 
+Calcular $B$ nos ayuda a escoger el hiperplano, pero usando solo $B$ podríamos escoger el hiperplano erróneo. En la siguiente gráfica vemos que en el hiperplano de color rojo las clases se separan bien (la clase negativa de los Austrias está por encima de la recta y la clase positiva por debajo), pero en el segundo hiperplano (negro) las clases están mal clasificadas. Sin embargo, ambos hiperplanos tienen un $B = 2$. 
 
 <center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/SVM_Formulaci%C3%B3n_del_problema/solo_dos.png?raw=true" style="zoom:33%;" /></center>
 
