@@ -45,7 +45,7 @@ Como acabamos de ver, si nuestro personaje se sitúa por encima del hiperplano e
 
 $$Austria \;\;\; \rightarrow \;\;\; si \;\;\; wx_i + b > 0$$
 
-$$ Borbón \;\;\; \rightarrow \;\;\; en \;\; caso \;\; contrario$$
+$$ Borbón \;\;\; \rightarrow \;\;\; si \;\;\; wx_i + b \leq 0$$
 
 Además, según se alejan nuestros monarcas del hiperplano, la ecuación de este asigna un valor cada vez mayor. Entonces, podemos calcular el valor $\beta = wx + b$ para saber lo lejos que se encuentra una observación del hiperplano. El mejor hiperplano será aquel que tenga las observaciones tan alejadas como sea posible. Definimos $B$ como el menor valor de todos los $\beta$ de nuestro dataset. <mark>Si queremos escoger entre dos hiperplanos, escogeremos el que tenga un mayor $B$.</mark>
 
