@@ -43,7 +43,7 @@ Para encontrar *el señor* hiperplano primero debemos saber cómo comparar dos h
 
 Como acabamos de ver, si nuestro personaje se sitúa por encima del hiperplano el valor es negativo y positivo en caso contrario. Por ello, para el problema de clasificación inicial podemos usar la siguiente regla para clasificar en una clase u otra:
 
-$$\hat{y}_i = \left\{ \begin{array}{ccccc}
+$$y_i = \left\{ \begin{array}{ccccc}
 Austria & si \;\;\; wx_i + b > 0\\
 Borbón  & en \;\; caso \;\; contrario\\
 \end{array} \right.$$
