@@ -1,6 +1,5 @@
 ---
 title: SVM Formulación del problema desde un punto de vista 'real'👑
-subtitle: DBJHCXB
 date: 2020-07-12 11:58:49 +07:00
 modified: 2020-07-14 11:58:49 +07:00
 ---
