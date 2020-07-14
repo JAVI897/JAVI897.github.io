@@ -48,8 +48,8 @@ $$
 \begin{equation}
   \hat{y}_i =
     \begin{cases}
-      Austria & \text{si} \;\;\; wx_i + b > 0\\
-      Borbón  & \text{en caso contrario}\\
+      Austria & si \;\;\; wx_i + b > 0\\
+      Borbón  & en \;\; caso \;\; contrario\\
     \end{cases}       
 \end{equation}
 $$
