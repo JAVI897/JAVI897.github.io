@@ -42,6 +42,8 @@ Para encontrar *el señor* hiperplano primero debemos saber cómo comparar dos h
 <center><img src="https://github.com/JAVI897/JAVI897.github.io/blob/master/_posts/SVM_Formulaci%C3%B3n_del_problema/ejemplo-lejania.png?raw=true" style="zoom:33%;" /></center>
 
 Como acabamos de ver, si nuestro personaje se sitúa por encima del hiperplano el valor es negativo y positivo en caso contrario. Por ello, para el problema de clasificación inicial podemos usar la siguiente regla para clasificar en una clase u otra:
+
+
 $$
 \begin{equation}
   \hat{y}_i =
@@ -51,6 +53,8 @@ $$
     \end{cases}       
 \end{equation}
 $$
+
+
 Además, según se alejan nuestros monarcas del hiperplano, la ecuación de este asigna un valor cada vez mayor. Entonces, podemos calcular el valor $\beta = wx + b$ para saber lo lejos que se encuentra una observación del hiperplano. El mejor hiperplano será aquel que tenga las observaciones tan alejadas como sea posible. Definimos $B$ como el menor valor de todos los $\beta$ de nuestro dataset. <mark>Si queremos escoger entre dos hiperplanos, escogeremos el que tenga un mayor $B$.</mark>
 
 $$B = \underset{i=1,...,m}{\text{min}} \beta_i$$
