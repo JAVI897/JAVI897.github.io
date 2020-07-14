@@ -43,10 +43,9 @@ Para encontrar *el señor* hiperplano primero debemos saber cómo comparar dos h
 
 Como acabamos de ver, si nuestro personaje se sitúa por encima del hiperplano el valor es negativo y positivo en caso contrario. Por ello, para el problema de clasificación inicial podemos usar la siguiente regla para clasificar en una clase u otra:
 
-$$y_i = \left\{ \begin{array}{ccccc}
-Austria & si \;\;\; wx_i + b > 0\\
-Borbón  & en \;\; caso \;\; contrario\\
-\end{array} \right.$$
+$$Austria \;\;\; \rightarrow \;\;\; si \;\;\; wx_i + b > 0$$
+
+$$ Borbón \;\;\; \rightarrow \;\;\; en \;\; caso \;\; contrario$$
 
 Además, según se alejan nuestros monarcas del hiperplano, la ecuación de este asigna un valor cada vez mayor. Entonces, podemos calcular el valor $\beta = wx + b$ para saber lo lejos que se encuentra una observación del hiperplano. El mejor hiperplano será aquel que tenga las observaciones tan alejadas como sea posible. Definimos $B$ como el menor valor de todos los $\beta$ de nuestro dataset. <mark>Si queremos escoger entre dos hiperplanos, escogeremos el que tenga un mayor $B$.</mark>
 
