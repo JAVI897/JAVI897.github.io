@@ -243,7 +243,7 @@ $$k_{i, j} = k(x_i, x_j) = (\phi(x_i)')^t\phi(x_j)' =$$
 
 $$= ( \phi(x_i) - \frac{1}{m} \sum_{k=1}^{m} \phi(x_k) )^t ( \phi(x_j) - \frac{1}{m} \sum_{k=1}^{m} \phi(x_k)) =$$
 
-$$= k(x_i, x_j) - \frac{1}{m}\sum_{k=1}^m k(x_i, x_k) - \frac{1}{m}\sum_{k=1}^m k(x_j, x_k) - \frac{1}{m^2} \sum_{l=1}^m \sum_{k=1}^m k(x_l, x_k)$$
+$$= k(x_i, x_j) - \frac{1}{m}\sum_{k=1}^m k(x_i, x_k) - \frac{1}{m}\sum_{k=1}^m k(x_j, x_k) - \frac{1}{m^2} \sum_{l, k=1}^m k(x_l, x_k)$$
 
 Si recordamos, en el algoritmo anterior podíamos calcular los scores usando únicamente $\Sigma$ y $V$.
 
