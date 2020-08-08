@@ -16,7 +16,7 @@ Las nuevas dimensiones se llaman componentes principales. La proyección de las 
 
 $$t_{1i} = proy_{p_1}(x_{i}) = p_1^t \; x_i = \sum_{j=1}^d p_{1j} \; x_{ij} =  p_{11} \; x_{i1} + p_{12} \; x_{i2} + ... + p_{1d} \; x_{id}$$
 
-<center><img src="\assets\img\pca3.png" style="zoom:99%;" /></center>
+<center><img src="\assets\img\pca3.PNG" style="zoom:99%;" /></center>
 
 Sea $X$ una matriz de datos de dimensiones $k \times n$ (donde $k$ es el número de variables y $n$ el número de individuos) y $p$ un vector de dimensiones $k \times 1$. Podemos expresar los scores en la primera dimensión de forma matricial :
 
@@ -30,7 +30,7 @@ Ahora la pregunta es... ¿cómo encontramos a $p$? El vector $p$ debe cumplir un
 
 Según Hotelling, las componentes habría que seleccionarlas como ejes ortogonales de forma que minimizasen <mark>las sumas de las distancias residuales (suma de cuadrados residual)</mark> de las observaciones originales a las proyectadas.
 
-<center><img src="\assets\img\pca1.png" style="zoom:99%;" /></center>
+<center><img src="\assets\img\pca1.PNG" style="zoom:99%;" /></center>
 
 $$\lVert x_i \rVert^2 = \lVert x_i^{*} \rVert^2 + \lVert r \rVert^2 $$
 
@@ -46,7 +46,7 @@ Por ello, seleccionar las componentes de forma que se minimice la suma de cuadra
 
 Las distancias entre observaciones en la nube proyectada deben ser lo más parecidas posibles a las distancias existentes en los datos originales.
 
-<center><img src="\assets\img\pca2.png" style="zoom:99%;" /></center>
+<center><img src="\assets\img\pca2.PNG" style="zoom:99%;" /></center>
 
 Por tanto, deberemos minimizar la diferencia entre las distancias originales y las proyectadas.
 
@@ -107,7 +107,7 @@ Donde:
 
 Una de las ventajas de la descomposición en valores singulares es que las matrices $U$ y $V$ tienen sus columnas ordenadas según los valores propios (de mayor a menor).
 
-<center><img src="\assets\img\pca4.png" style="zoom:99%;" /></center>
+<center><img src="\assets\img\pca4.PNG" style="zoom:99%;" /></center>
 
 ##### Proyección
 
