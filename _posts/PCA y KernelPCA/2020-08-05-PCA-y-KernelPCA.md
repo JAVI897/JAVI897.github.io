@@ -1,6 +1,6 @@
 ---
 title: PCA y Kernel PCA
-date: 2020-08-05 11:58:47 +07:00
+date: 2020-08-08 11:58:47 +07:00
 tags: [dimensionality reduction]
 ---
 
