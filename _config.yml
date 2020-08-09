@@ -12,7 +12,7 @@ mode: light # default theme "dark" | "light"
 author:
   name: Javi GG # author name
   bio: >- # tell to the world
-    Data Science UnderGrad at UPV. Curious programmer, tinkers around in Python and R. This is my personal website!
+    Data Science UnderGrad at UPV. Amb el canvi de paradigma vaig haver-me d’excusar
   username: Javi GG # social media username eg. github, twitter 
   email: s.javi.com@gmail.com # your contact adress
   avatar: /assets/img/avatar.jpg # change with your own avatar

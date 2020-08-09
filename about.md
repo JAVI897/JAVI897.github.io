@@ -5,7 +5,9 @@ layout: page
 comments: false
 ---
 
-Hola! Soy un estudiante de Ciencia de Datos. En este blog iré subiendo poco a poco todos los extravagantes y no tan extravagantes 😅 proyectos/análisis que se me vayan ocurriendo.
+Científico de datos en proceso. Mis dos grandes pasiones por el momento son la ciencia de datos y la historia de España. Sobre lo primero, mis campos favoritos son los de la reducción de la dimensionalidad y la aplicación de técnicas estadísticas sobre espacios no euclídeos.  En este blog iré subiendo poco a poco todos los análisis/introducciones que me vayan interesando (contados a mi manera, <mark>claro </mark>🙃).
+
+
 
 ##### contacto ✨
 
