@@ -1,6 +1,7 @@
 ---
 title: Laplacian eigenmaps
 date: 2020-08-31 11:58:47 +07:00
+modified: 2020-09-03 11:58:49 +07:00
 tags: [dimensionality reduction]
 ---
 
@@ -226,7 +227,7 @@ La solución a este problema de optimización se obtiene de los vectores propios
 
 $$Ly = \lambda Dy \rightarrow (D- W)y = \lambda Dy$$
 
-Donde los valores propios se obtienen del polinomio característico; $det(L - \lambda D)$ y los valores propios se obtienen resolviendo el sistema; $(L - \lambda D)x = 0$ para cada valor propio.
+Donde los valores propios se obtienen del polinomio característico; $det(L - \lambda D)$ y los valores propios se obtienen resolviendo el sistema; $(L - \lambda D)y = 0$ para cada valor propio.
 
 Se llega a esta conclusión resolviendo los multiplicadores de Lagrange tal y como hemos hecho con $m=1$. 
 
