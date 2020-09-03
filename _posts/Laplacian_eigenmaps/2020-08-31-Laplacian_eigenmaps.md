@@ -226,6 +226,8 @@ La solución a este problema de optimización se obtiene de los vectores propios
 
 $$Ly = \lambda Dy \rightarrow (D- W)y = \lambda Dy$$
 
+Donde los valores propios se obtienen del polinomio característico; $det(L - \lambda D)$ y los valores propios se obtienen resolviendo el sistema; $(L - \lambda D)x = 0$ para cada valor propio.
+
 Se llega a esta conclusión resolviendo los multiplicadores de Lagrange tal y como hemos hecho con $m=1$. 
 
 Aunque este problema se puede formular como un problema de valores propios estándar modificando la anterior expresión;
