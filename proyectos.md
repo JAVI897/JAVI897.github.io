@@ -8,6 +8,28 @@ comments:
 
 
 
+# Manifold Learning
+
+1️⃣ [LLE-and-its-variants](https://github.com/JAVI897/LLE-and-its-variants): Locally Linear Embedding es un método de reducción de la dimensión no-lineal. Fue propuesto por Roweis y Saul en el 2000. LLE presenta un enfoque radicalmente diferente a lo que se venía proponiendo en aquel entonces ya que no intentará preservar las distancias entre observaciones sino la estructura local.
+
+En este repositorio se implementa la versión original de LLE y algunas de sus variantes más recientes en Python. La explicación sobre el algoritmo la puedes encontrar en; [Think Globally, Fit Locally; LLE](https://javi897.github.io/LLE/).
+
+2️⃣ [Laplacian-Eigenmaps](https://github.com/JAVI897/Laplacian-Eigenmaps): Laplacian Eigenmaps (LE) es otro método de reducción de la dimensión no-lineal. Fue propuesto en 2003 por Mikhail Belkin y Partha Niyogi. LE construye los *embeddings* usando las propiedades de la matriz Laplaciana.
+
+En este repositorio se implementa una versión de Laplacian Eigenmaps en Python. La descripción del algoritmo la puedes encontrar en; [Laplacian eigenmaps](https://javi897.github.io/Laplacian_eigenmaps/).
+
+3️⃣ [Kernel-PCA](https://github.com/JAVI897/Kernel-PCA): Kernel PCA es una extensión de PCA mucho más reciente que utiliza el “kernel trick” que también es muy usado en otros algoritmos como, por ejemplo, las máquinas de soporte vectorial.
+
+En este repositorio se implementa una versión de Kernel PCA con diversos kernels. La explicación sobre Kernel PCA la puedes encontrar en; [PCA y Kernel PCA](https://javi897.github.io/PCA-y-KernelPCA/) y en este otro post explico algunos de los kernels implementados; [Kernel Functions](https://javi897.github.io/Kernels/).
+
+# ML-Metrics
+
+ML-Metrics es una interfaz programada en *python* mediante el software *streamlit* para poder analizar el punto de corte óptimo de un modelo de clasificación.
+
+La aplicación implementa diferentes curvas como las famosas curvas ROC o PRC para validar hasta 5 modelos diferentes. Los criterios para elegir el punto de corte implementados son: Youden, Distance_PRC, Distance ROC, Difference Recall-Precision, F-score y Difference Sensitivity-Specificity. Por otra parte, las métricas para evaluar el modelo de clasificación implementadas fueron: especificidad, sensibilidad, PPV, AUC, AP y la matriz de confusión.
+
+Repositorio: <a href="https://github.com/JAVI897/ML-Metrics" target="_blank" rel="noopener">ML-Metrics</a>
+
 # Deep-learning-projects
 
 Este es un repositorio de código (en formato notebook normalmente) de proyectos relacionados con el deep learning usando datasets de kaggle u otros. 
@@ -25,14 +47,4 @@ Este es un repositorio de código (en formato notebook normalmente) de proyectos
 | DCGAN on Simpsons                                  | [GAN](https://github.com/JAVI897/Deep-learning-projects/blob/master/DCGAN%20on%20Simpsons/DCGAN%20on%20Simpsons.ipynb) | Generative adversarial network               |
 
 Repositorio: <a href="https://github.com/JAVI897/Deep-learning-projects" target="_blank" rel="noopener">Deep-learning-projects</a>
-
-
-
-# ML-Metrics
-
-ML-Metrics es una interfaz programada en *python* mediante el software *streamlit* para poder analizar el punto de corte óptimo de un modelo de clasificación.
-
-La aplicación implementa diferentes curvas como las famosas curvas ROC o PRC para validar hasta 5 modelos diferentes. Los criterios para elegir el punto de corte implementados son: Youden, Distance_PRC, Distance ROC, Difference Recall-Precision, F-score y Difference Sensitivity-Specificity. Por otra parte, las métricas para evaluar el modelo de clasificación implementadas fueron: especificidad, sensibilidad, PPV, AUC, AP y la matriz de confusión.
-
-Repositorio: <a href="https://github.com/JAVI897/ML-Metrics" target="_blank" rel="noopener">ML-Metrics</a>
 
