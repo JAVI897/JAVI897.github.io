@@ -162,5 +162,5 @@ Para escribir este post me he basado principalmente en [1].
 
 - [1] Ghojogh, Benyamin, Ghojogh, Aydin, Crowley, Mark, and Karray, Fakhri. Fitting a mixture distribution to data: Tutorial. arXiv preprint arXiv:1901.06708, 2019a
 - [2] [Wikipedia: Algoritmo esperanza-maximización](https://es.wikipedia.org/wiki/Algoritmo_esperanza-maximizaci%C3%B3n)
-- [3] [Máxima verosimilitud](https://es.wikipedia.org/wiki/M%C3%A1xima_verosimilitud)
+- [3] [Wikipedia: Máxima verosimilitud](https://es.wikipedia.org/wiki/M%C3%A1xima_verosimilitud)
 
