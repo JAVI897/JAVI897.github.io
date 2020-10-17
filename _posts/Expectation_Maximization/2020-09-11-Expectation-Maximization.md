@@ -50,7 +50,7 @@ El algoritmo EM es un algoritmo iterativo que se usa para estimar los parámetro
 
 Se inicializan los parámetros a valores aleatorios:
 
-1️⃣ **Paso E (expectation step)**; se calcula la esperanza de las variables ocultas. La probabilidad de que $x$ haya sido obtenida por la distribución k-ésima (probabilidad a posteriori) usando los parámetros de la iteración $t - 1$
+1️⃣ **Paso E (expectation step)**; se calcula la esperanza de las variables ocultas. La probabilidad de que $x$ haya sido obtenida por la distribución k-ésima (probabilidad a posteriori) usando los parámetros de la iteración $t$
 
 2️⃣ **Paso M (maximization step)**; estimar los nuevos parámetros con los parámetros de la iteración anterior y usando las probabilidades a posteriori obtenidas en el paso E
 
