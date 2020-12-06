@@ -176,7 +176,106 @@ Y podemos reescribir $L_r$ como;
 
 $$L_r = \frac{\tilde{f_r}^t L \tilde{f_r}}{\tilde{f_r}^t D \tilde{f_r}} $$
 
+### Conexión con Fisher Score
+
+Existe una relación muy interesante del algoritmo LS con Fisher Score. De hecho, Fisher Score no es más que un caso particular del algoritmo LS con una estructura del grafo de los vecinos más cercanos un tanto especial. Veamos;
+
+El criterio de selección de variables de Fisher Score se define como;
+
+$$F_r = \frac{\sum_{i=1}^c n_i (\mu_i - \mu)^2}{\sum_{i=1}^c n_i \sigma_i^2}$$
+
+Donde $n_i$ es el número de observaciones de la clase $i$, $\mu_i, \sigma_i^2$ son la media y la varianza de la clase $i$ para la correspondiente variable r-ésima respectivamente y $\mu, \sigma^2$ son la media y la varianza de toda la muestra de datos respectivamente.
+
+Definamos un grafo $G$ donde todas las observaciones de la misma clase estén conectadas (al igual que en la versión supervisada de Laplacian Score). Definamos el peso de cada enlace como;
+
+$$s_{ij} = \left\{ \begin{array}{ccccc} \frac{1}{n_i} & \text{si } x_i \text{ está conectado con }x_j, \; x_i, x_j \in l \\ 0 & \text{en otro caso} \\ \end{array} \right. $$
+
+Asumamos que los datos están ordenados de acuerdo a la clase a la que pertenecen. En este caso, la matriz de pesos $S$ se escribe como;
+
+$$ S = \left[ \begin{array}{ccc} S_1 & 0 & 0  \\ 0 & \ddots & 0 \\ 0 & 0 & S_c \end{array} \right] $$
+
+Donde $S_c$ es una matriz de dimensiones $n_i \times n_i$ con todos los elementos iguales a $\frac{1}{n_i}$. Esto es;
+
+$$S_i = \frac{1}{n_i}11^t$$
+
+Por tanto, para cada fila de $S_i$, su sumatorio será igual a 1 y por tanto, la matriz $D$ ( matriz diagonal donde las diagonales son las sumas de las filas de la matriz $S$), será la matriz identidad. 
+
+Sea $f_r^1 = [ f_{r1}, ..., f_{rn_1}]$, o sea, todas las observaciones de la r-ésima variable que pertenecen a la clase $i$, la misma definición sigue para $f_r^2$, etc. Podemos hacer algunas observaciones para reescribir $F_r$.
+
+1️⃣ Observación 1
+
+La matriz laplaciana para la clase $i$ se definirá como; $L_i = D_i - S_i = I_i - S_i$ donde $I_i$ es la matriz identidad de dimensiones $n_i \times n_i$. Teniendo esto en cuenta;
+
+$$f_r^tLf_r = \sum_{i = 1}^c (f_r^i)^tL_if_r^i = \sum_{i = 1}^c (f_r^i)^t (I_i - S_i)f_r^i = $$
+
+$$= \sum_{i=1}^c (f_r^i)^t(I_i - \frac{1}{n_i}11^t)f_r^i = \sum_{i = 1}^c n_i cov(f_r^i, f_r^i) =$$
+
+$$= \sum_{i = 1}^c n_i \sigma_i^2$$
+
+Y como $f_r^tLf^r = \tilde{f_r}^tL\tilde{f_r}$, finalmente, <mark>el denominador de $F_r$ será igual a $\tilde{f_r}^tL\tilde{f_r}$</mark>.
+
+2️⃣ Observación 2
+
+$\tilde{f_r}^t D \tilde{f_r} = n \sigma^2$ esta afirmación no la voy a demostrar, se deriva de forma bastante fácil de la ecuación (3) de [2].
+
+3️⃣ Observación 3
+
+El numerador de $F_r$ se puede reescribir como; $\tilde{f_r}^tD\tilde{f_r} - \tilde{f_r}^tL\tilde{f_r}$. Veamos;
+
+$$\sum_{i=1}^c n_i(\mu_i - \mu)^2 = \sum_{i=1}^c (n_i\mu_i^2 - 2 n_i \mu_i \mu + n_i \mu^2) =$$
+
+$$\require{cancel} = \sum_{i=1}^c \frac{n_i}{n_1} n_i \mu_i^2 - 2 \mu \sum_{i=1}^c n_i \mu_i + \mu^2 \cancelto{n}{\sum_{i=1}^c n_i}$$
+
+$$\require{cancel} = \sum_{i=1}^c \frac{1}{n_1} (n_i \mu_i)^2 - 2 \mu \cancelto{n}{\sum_{i=1}^c n_i} \cancelto{\mu}{\sum_{i=1}^c \mu_i} + \mu^2 n = $$
+
+$$ = \sum_{i=1}^c \frac{1}{n_1} (n_i \mu_i)^2 - 2 \mu^2 n + \mu^2 n$$
+
+------
+
+Ahora, podemos reescribir $(n_i\mu_i)^2$ como $(f_r^i)^t 11^t f_r^i$. Para demostrarlo tomemos una variable $f_r^i$ con solo dos observaciones. El producto $(f_r^i)^t11^t f_r^i$ será;
+
+$$(f_r^i)^t11^t f_r^i = \left[ \begin{array}{ccc} f_{r1}^i & f_{r2}^i \end{array} \right] \left[ \begin{array}{ccc} 1& 1\\ 1 & 1 \end{array} \right] \left[ \begin{array}{ccc} f_{r1}^i \\ f_{r2}^i \end{array} \right] = $$
+
+$$= (f_{r1}^i + f_{r2}^i) f_{r1}^i + (f_{r1}^i + f_{r2}^i) f_{r2}^i = $$
+
+$$= (f_{r1}^i + f_{r2}^i) (f_{r1}^i + f_{r2}^i) = (f_{r1}^i + f_{r2}^i)^2 = (2 \frac{(f_{r1}^i + f_{r2}^i)}{2})^2 = $$
+
+$$= (n_i \mu_i)^2$$
+
+------
+
+Y por tanto la expresión anterior quedaría como;
+
+$$\sum_{i=1}^c \frac{1}{n_i}(f_r^i)^t 11^t f_r^i - 2\mu^2n + \mu^2n$$
+
+Teniendo en cuenta la definición de la matriz $S_i$;
+
+$$\sum_{i=1}^c (f_r^i)^t S_i f_r^i - 2\mu^2n + \mu^2n = $$
+
+$$\sum_{i=1}^c (f_r^i)^t S_i f_r^i - 2\frac{(\mu n)^2}{n} + \frac{(\mu n)^2}{n} = $$
+
+$$= f_r^t S f_r - \frac{(\mu n)^2}{n} $$
+
+Y ahora, teniendo en cuenta que $\frac{(\mu n)^2}{n} = f_r^t (\frac{1}{n} 11^t) f_r$ (lo que es bastante fácil de demostrar, como hemos hecho antes con $(n_i \mu_i)^2$ ), se reescribe la ecuación como;
+
+$$f_r^t S f_r - f_r^t (\frac{1}{n} 11^t) f_r  = f_r^t (I - S) f_r - f_r^t (I - (\frac{1}{n} 11^t)) f_r = $$
+
+$$= f_r^t (D - S) f_r - f_r^t (I - (\frac{1}{n} 11^t)) f_r =$$
+
+$$= f_r^t L f_r - f_r^t D f_r = $$
+
+$$= \tilde{f_r}^tL\tilde{f_r} - \tilde{f_r}^tD\tilde{f_r}$$
+
+Entonces, tomando 1️⃣ , 3️⃣, se puede reescribir $F_r$ como;
+
+$$F_r = \frac{\sum_{i=1}^c n_i (\mu_i - \mu)^2}{\sum_{i=1}^c n_i \sigma_i^2} = \frac{\tilde{f_r}^tL\tilde{f_r} - \tilde{f_r}^tD\tilde{f_r}}{\tilde{f_r}^tL\tilde{f_r}} = 1 - \frac{1}{L_r}$$
+
+Y por tanto, 
+
+$$L_r = \frac{1}{F_r - 1}$$
+
 #### Referencias
 
 - [1] Varini, Claudio & Degenhard, Andreas & Nattkemper, Tim. (2005). ISOLLE: Locally linear embedding with geodesic distance. 331-342. 10.1007/11564126_34.
 - [2] He, X., Deng, C. y Partha, N. (2005). Laplacian Score for Feature Selection. Advances in Neural Information Processing Systems; 18:507-514.
+
