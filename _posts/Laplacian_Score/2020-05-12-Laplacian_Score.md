@@ -200,7 +200,7 @@ $$S_i = \frac{1}{n_i}11^t$$
 
 Por tanto, para cada fila de $S_i$, su sumatorio será igual a 1 y por tanto, la matriz $D$ ( matriz diagonal donde las diagonales son las sumas de las filas de la matriz $S$), será la matriz identidad. 
 
-Sea $f_r^1 = [ f_{r1}, ..., f_{rn_1}]$, o sea, todas las observaciones de la r-ésima variable que pertenecen a la clase $i$, la misma definición sigue para $f_r^2$, etc. Podemos hacer algunas observaciones para reescribir $F_r$.
+Sea $f_r^1 = [ f_{r1}, ..., f_{rn_1}]$, o sea, todas las observaciones de la r-ésima variable que pertenecen a la clase $1$, la misma definición sigue para $f_r^2$, etc. Podemos hacer algunas observaciones para reescribir $F_r$.
 
 1️⃣ Observación 1
 
@@ -224,11 +224,11 @@ El numerador de $F_r$ se puede reescribir como; $\tilde{f_r}^tD\tilde{f_r} - \ti
 
 $$\sum_{i=1}^c n_i(\mu_i - \mu)^2 = \sum_{i=1}^c (n_i\mu_i^2 - 2 n_i \mu_i \mu + n_i \mu^2) =$$
 
-$$\require{cancel} = \sum_{i=1}^c \frac{n_i}{n_1} n_i \mu_i^2 - 2 \mu \sum_{i=1}^c n_i \mu_i + \mu^2 \cancelto{n}{\sum_{i=1}^c n_i}$$
+$$\require{cancel} = \sum_{i=1}^c \frac{n_i}{n_i} n_i \mu_i^2 - 2 \mu \sum_{i=1}^c n_i \mu_i + \mu^2 \cancelto{n}{\sum_{i=1}^c n_i}$$
 
-$$\require{cancel} = \sum_{i=1}^c \frac{1}{n_1} (n_i \mu_i)^2 - 2 \mu \cancelto{n}{\sum_{i=1}^c n_i} \cancelto{\mu}{\sum_{i=1}^c \mu_i} + \mu^2 n = $$
+$$\require{cancel} = \sum_{i=1}^c \frac{1}{n_i} (n_i \mu_i)^2 - 2 \mu \cancelto{n}{\sum_{i=1}^c n_i} \cancelto{\mu}{\sum_{i=1}^c \mu_i} + \mu^2 n = $$
 
-$$ = \sum_{i=1}^c \frac{1}{n_1} (n_i \mu_i)^2 - 2 \mu^2 n + \mu^2 n$$
+$$ = \sum_{i=1}^c \frac{1}{n_i} (n_i \mu_i)^2 - 2 \mu^2 n + \mu^2 n$$
 
 ------
 
