@@ -53,7 +53,7 @@
     <div class="title"><a href="https://www2.statmt.org/wmt24/pdf/2024.wmt-1.90.pdf"> Training and Fine-Tuning NMT Models for Low-Resource Languages using Apertium-Based Synthetic Corpora
 </a></div>
     <div class="author">Aleix Sant, Daniel Bardanca, José Ramom Pichel Campos, Francesca De Luca Fornaciari, Carlos Escolano, <strong>Javier Garcia Gilabert</strong>, Pablo Gamallo, Audrey Mash, Xixian Liao and Maite Melero. </div>
-    <div class="periodical"><em>The Ninth Conference on Machine Translation (WMT24) <strong>(WMT)</strong>, 2024.</em></div>
+    <div class="periodical"><em>The Ninth Conference on Machine Translation <strong>(WMT)</strong>, 2024.</em></div>
     <div class="links">
       <a href="https://www2.statmt.org/wmt24/pdf/2024.wmt-1.90.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
     </div>
