@@ -8,6 +8,7 @@ I am currently a **research engineer** at the [Barcelona Supercomputing Center](
 
 
 ## News
+• **October 2024**: Our paper "Training and Fine-Tuning NMT Models for Low-Resource Languages using Apertium-Based Synthetic Corpora" was accepted by [WMT2024](https://www2.statmt.org/wmt24/pdf/2024.wmt-1.90.pdf).
 • **June 2024**: Release of  [Plume](https://huggingface.co/projecte-aina/Plume256k), an open multilingual LLM for Machine Translation. <br />
 • **June 2024**: New [paper](https://aclanthology.org/2024.americasnlp-1.17/) on Machine Translation for low resource languages.   <br />
 • **June 2024**: Presented our work on mitigating added toxicity in Machine Translation ([ReSeTOX](https://arxiv.org/abs/2305.11761)) at EAMT 2024. <br />
