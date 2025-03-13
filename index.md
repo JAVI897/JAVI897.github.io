@@ -8,6 +8,8 @@ I am currently a **research engineer** at the [Barcelona Supercomputing Center](
 
 
 ## News
+• **March 2025**: Our paper "MT-LENS: An all-in-one Toolkit for Better Machine Translation Evaluation" was accepted by [NAACL 2025 -- Demo Track](https://2025.naacl.org/). <br />
+• **February 2025**: We've released our multilingual LLM for translation tasks, built on Salamandra-LLM, capable of translating across 37 European languages! Check it out here: [salamandraTA-7b-instruct](https://huggingface.co/BSC-LT/salamandraTA-7b-instruct). <br />
 • **October 2024**: Our paper "Training and Fine-Tuning NMT Models for Low-Resource Languages using Apertium-Based Synthetic Corpora" was accepted by [WMT2024](https://www2.statmt.org/wmt24/pdf/2024.wmt-1.90.pdf). <br />
 • **June 2024**: Release of  [Plume](https://huggingface.co/projecte-aina/Plume256k), an open multilingual LLM for Machine Translation. <br />
 • **June 2024**: New [paper](https://aclanthology.org/2024.americasnlp-1.17/) on Machine Translation for low resource languages.   <br />
