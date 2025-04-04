@@ -24,8 +24,8 @@
   <div class="col-sm-9" style="position: relative;width: 100%;">
     <div class="title"><a href="https://arxiv.org/abs/2406.09140"> Investigating the translation capabilities of Large Language Models trained on parallel data only
 </a></div>
-    <div class="author"><strong>Javier García Gilabert</strong>, Carlos Escolano, Aleix Sant Savall, Francesca De Luca Fornaciari, Audrey Mash, Xixian Liao, Maite Melero </div>
-    <div class="periodical"><em>arXiv <strong>(preprint)</strong>, 2024.</em></div>
+    <div class="author"><strong>Javier García Gilabert</strong>, Carlos Escolano, Aleix Sant, Francesca De Luca Fornaciari, Audrey Mash, Xixian Liao, Maite Melero </div>
+    <div class="periodical"><em>Machine Translation Summit XX: Research-Technical Track <strong>(MT Summit)</strong>, 2025.</em></div>
     <div class="links">
       <a href="https://arxiv.org/abs/2406.09140" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/projecte-aina/Plume" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
