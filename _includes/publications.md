@@ -66,6 +66,17 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-9" style="position: relative;width: 100%;">
+    <div class="title"><a href=""> Culture-aware machine translation: the case study of low-resource language pair Catalan-Chinese.
+</a></div>
+    <div class="author">Xixian Liao, Carlos Escolano, Audrey Mash, Francesca De Luca Fornaciari, <strong>Javier García Gilabert</strong>, Miguel Claramunt Argote, Ella Bohman and Maite Melero. </div>
+    <div class="periodical"><em>Machine Translation Summit XX: Research-Technical Track <strong>(MT Summit)</strong>, 2025.</em></div>
+  </div>
+</div>
+</li>
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-9" style="position: relative;width: 100%;">
     <div class="title"><a href="https://www2.statmt.org/wmt24/pdf/2024.wmt-1.90.pdf"> Training and Fine-Tuning NMT Models for Low-Resource Languages using Apertium-Based Synthetic Corpora
 </a></div>
     <div class="author">Aleix Sant, Daniel Bardanca, José Ramom Pichel Campos, Francesca De Luca Fornaciari, Carlos Escolano, <strong>Javier Garcia Gilabert</strong>, Pablo Gamallo, Audrey Mash, Xixian Liao and Maite Melero. </div>
